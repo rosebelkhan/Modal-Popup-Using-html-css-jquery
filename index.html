@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Simple Demo Website</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<style type="text/css" media="screen">
+		
+
+
+	</style>
+</head>
+<body>
+
+
+
+<div class="container">
+	<button id="open">Click Me</button>
+</div>
+
+<div class="model-container">
+	<div class="model">
+		<i class="fa fa-heart"></i>
+		<h3>Model Pop Box</h3>
+		<p>Lorem ipsum is a good content over the whole eorld.Lorem ipsum is a good content over the whole eorld.Lorem ipsum is a good content over the whole eorld.</p>
+		<button>Ok</button>
+		<button class="close">Cancel</button>
+		<i class="fa fa-times close"></i>
+	</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function(){
+
+	  $("#open").click(function(){
+	    $(".model-container").css('transform','scale(1)');
+	  });
+
+	  $(".close").click(function(){
+	    $(".model-container").css('transform','scale(0)');
+	  });
+
+	});
+
+</script>
+	
+</body>
+</html>
