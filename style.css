@@ -41,7 +41,7 @@
 	transform: scale(0);
 }
 .model-container .model{
-	height: 400px;
+	height: 420px;
 	max-width: 350px;
 	margin: 0 10px;
 	padding: 20px;
@@ -75,9 +75,36 @@
 	color: #222;
 }
 .model-container .model p{
-	margin: 20px 10px;
+	margin: 10px 10px;
 	text-align: justify;
 	font-size: 14px;
+}
+.model-container .model input[type="radio"]{
+	display: none;
+}
+.model-container .model .icons{
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+.model-container .model .icons label{
+	font-size: 30px;
+	cursor: pointer;
+	opacity: .5;
+}
+.model-container .model .icons:hover label{
+	opacity: .2;
+	transition: .3s;
+}
+
+.model-container .model #btn1:checked ~ .icons label:nth-child(1),
+.model-container .model #btn2:checked ~ .icons label:nth-child(2),
+.model-container .model #btn3:checked ~ .icons label:nth-child(3),
+.model-container .model #btn4:checked ~ .icons label:nth-child(4),
+.model-container .model #btn5:checked ~ .icons label:nth-child(5),
+.model-container .model .icons label:hover{
+	opacity: 1;
+	transform: scale(1.3);
 }
 .model-container .model button:hover{
 	letter-spacing: 2px;
@@ -85,10 +112,17 @@
 }
 .model-container .model .fa-times{
 	position: absolute;
-	top: 15px;
-	right: 15px;
-	color: red;
+	top: -15px;
+	right: -15px;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 5px;
+	border-radius: 550%;
+	height: 35px;
+	line-height: 20px;
+	width: 35px;
 	transition: .2s;
+	background: crimson;
 }
 .model-container .model .fa-times:hover{
 	cursor: pointer;
